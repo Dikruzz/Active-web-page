@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Food section</title>
+  <link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">Fill the Form to Update Details</div>
+    <form action="">
+      <div class="form">
+        <input type="text" class="first" id="firstname" placeholder="FirstName" required />
+        <input type="text" class="first" id="lastname" placeholder="LastName" required />
+        <input type="text" class="second" id="address" placeholder="Address" required />
+        <input type="number" class="second" id="pincode" placeholder="Pincode" required />
+        <div class="choice">
+          <label class="gender" for="gender">Gender :</label>
+          <select name="" id="gender">
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <label for="Food">Choice of Food :</label><br>
+          <select name="" id="food">
+            <option value="North Indian Food">North Indian Food</option>
+            <option value="South Indian Food">South Indian Food</option>
+            <option value="Chinese Food">Chinese Food</option>
+            <option value="Italian Food">Italian Food</option>
+            <option value="Mexican Food">Mexican Food</option>
+          </select><br>
+          <label for="State">State :</label><br>
+          <select name="" id="state" required>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Maharastra">Maharastra</option>
+          </select><br>
+          <label for="Country">Country :</label><br>
+          <select name="" id="country" required>
+            <option value="India">India</option>
+          </select>
+        </div>
+          <button class="submit" type="submit" name="" id="" onclick="addetails()">
+            Submit
+          </button>
+      </div>
+    </form>
+    <div class="tabledata">
+      <!-- <table>
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table> -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

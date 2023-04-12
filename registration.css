@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #44c2a9, #2dcf24);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #13ae4c;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid green;
+  font-size: 19px;
+}
+
+.form {
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form .first {
+  gap: 10px;
+  height: 40px;
+  width: calc(100% / 2 - 20px);
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.form .second {
+  gap: 10px;
+  height: 40px;
+  width: calc(100% / 2 - 20px);
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.choice select {
+  height: 30px;
+  width: 570px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.form input:focus,
+.form input:valid {
+  border-color: #13ae4c;
+}
+
+label{
+  font-size: 12px;
+}
+
+table {
+  margin-left: 20px;
+  margin-top: 30px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(252, 208, 127);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(119, 223, 126);
+}
+
+thead th {
+  background-color: white;
+}
+
+select {
+  width: 500px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 185px;
+  padding: 10px;
+  border: 1px solid green;
+  box-shadow: none;
+  border-radius: 10px;
+  background-color: #13ae4c;
+}
+
+button:hover {
+  box-shadow: 1px 1px 1px;
+  transition: all 0.5s ease-in-out;
+  background-color: green;
+  color: white;
+}
